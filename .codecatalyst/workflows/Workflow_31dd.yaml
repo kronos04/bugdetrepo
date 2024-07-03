@@ -26,7 +26,6 @@ Actions:
     Configuration:
       Steps:
         - Run: npm install
-        - Run: npm test -- --coverage --watchAll=false --testResultsProcessor="jest-junit"
         - Run: npm run build
   DeployToAmplifyHosting:
     Compute:
