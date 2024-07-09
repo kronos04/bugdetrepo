@@ -8,9 +8,21 @@ import ExpenseList from './components/ExpenseList';
 import AddExpenseForm from './components/AddExpenseForm';
 import RemainingBudget from './components/Remaining';
 
+import Navbar from "./components/Navbar";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Home from "./pages";
+import About from "./pages/about";
+import Blogs from "./pages/blogs";
+import SignUp from "./pages/signup";
+import Contact from "./pages/contact";
+
 const App = () => {
 	return (
-		<AppProvider>
+		<><AppProvider>
 			<div className='container'>
 				<h1 className='mt-3'>My Budget Planner</h1>
 				<div className='row mt-3'>
@@ -37,7 +49,20 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-		</AppProvider>
+		</AppProvider><Router>
+				<Navbar />
+				<Routes>
+					<Route exact path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route
+						path="/contact"
+						element={<Contact />} />
+					<Route path="/blogs" element={<Blogs />} />
+					<Route
+						path="/sign-up"
+						element={<SignUp />} />
+				</Routes>
+			</Router></>
 	);
 };
 
