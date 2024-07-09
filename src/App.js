@@ -17,7 +17,7 @@ import {
 import Home from "./pages";
 import About from "./pages/about";
 import Blogs from "./pages/blogs";
-import SignUp from "./pages/signup";
+import SignUp from "./pages/login";
 import Contact from "./pages/contact";
 
 const App = () => {
