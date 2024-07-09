@@ -17,10 +17,10 @@ import {
 import Home from "./pages";
 import About from "./pages/about";
 import Blogs from "./pages/blogs";
-import SignUp from "./pages/login";
+import LogIn from './pages/login';
 import Contact from "./pages/contact";
 
-const App = () => {
+function App() {
 	return (
 		<><AppProvider>
 			<div className='container'>
@@ -59,11 +59,11 @@ const App = () => {
 						element={<Contact />} />
 					<Route path="/blogs" element={<Blogs />} />
 					<Route
-						path="/sign-up"
-						element={<SignUp />} />
+						path="/login"
+						element={<LogIn />} />
 				</Routes>
 			</Router></>
 	);
-};
+}
 
 export default App;
