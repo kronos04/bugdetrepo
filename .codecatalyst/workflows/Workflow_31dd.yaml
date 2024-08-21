@@ -47,5 +47,5 @@ Actions:
     Environment:
       Name: development
       Connections:
-        - Name: "339712953518"
-          Role: CodeCatalystWorkflowDevelopmentRole-ecatstrzTestSpace
+        - Name: "637423474322"
+          Role: AppStudioAccessRole
