@@ -48,4 +48,4 @@ Actions:
       Name: development
       Connections:
         - Name: "637423474322"
-          Role: AppStudioAccessRole
+          Role: CodeCatalystWorkflowDevelopmentRole-appstudio-space.c7b699b6-b38
